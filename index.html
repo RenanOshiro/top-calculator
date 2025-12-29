@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOP Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="bg-container">
-        <div class="calculator-container"></div>
-    </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="calculator-container">
+        <div class="container-display">
+          <div class="display-top">100</div>
+          <div class="display-bottom">0</div>
+        </div>
+        <div class="keyboard">
+            <button type="button" data-type="number" class="btn-number">8</button>
+            <button type="button" data-type="number" class="btn-number">7</button>
+            <button type="button" data-type="number" class="btn-number">9</button>
+            <button type="button" data-type="operator" class="btn-operator">/</button>
+            <button type="button" data-type="number" class="btn-number">4</button>
+            <button type="button" data-type="number" class="btn-number">5</button>
+            <button type="button" data-type="number" class="btn-number">6</button>
+            <button type="button" data-type="operator" class="btn-operator">x</button>
+            <button type="button" data-type="number" class="btn-number">1</button>
+            <button type="button" data-type="number" class="btn-number">2</button>
+            <button type="button" data-type="number" class="btn-number">3</button>
+            <button type="button" data-type="operator" class="btn-operator">-</button>
+            <button type="button" data-type="clear" class="btn-clear">C</button>
+            <button type="button" data-type="number" class="btn-number">0</button>
+            <button type="button" data-type="equal" class="btn-equal">=</button>
+            <button type="button" data-type="operator" class="btn-operator">+</button>
+          </div>
+        </div>
+      </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

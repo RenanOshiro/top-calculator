@@ -1,0 +1,106 @@
+/* Reset padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding não aumente o tamanho do elemento */
+  -webkit-font-smoothing: antialiased; /* Deixa as fontes mais nítidas no Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base da página */
+html {
+  font-size: 62.5%; /* Facilita o uso de REM (1rem = 10px) */
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif; /* Ou sua fonte de preferência */
+  line-height: 1.5;
+  background-color: var(--bg-color);
+}
+
+:root {
+  /* Colors */
+  --bg-color: #ebebff;
+  --calc-bg: #9bafbe;
+  --display-bg: #252525;
+  --text-main: #333333;
+  --accent-color: #ff9500; /* Cor dos botões de operação */
+
+  /* Spacing & Borders */
+  --radius: 12px;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-container {
+  background-color: var(--calc-bg);
+  height: 40rem;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.container-display {
+  background-color: var(--display-bg);
+  height: 10rem;
+  width: 30rem;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-top,
+.display-bottom {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  background-color: rgb(51, 51, 51);
+  color: grey;
+  height: 4rem;
+  padding-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.display-bottom {
+  align-items: center;
+  background-color: var(--display-bg);
+  height: 6rem;
+  color: white;
+  font-size: 4rem;
+}
+
+.keyboard {
+  background-color: var(--calc-bg);
+  height: 25rem;
+  width: 30rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: var(--text-main);
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  filter: brightness(0.9); /* Escurece levemente ao passar o mouse */
+}
+
+button:active {
+  transform: scale(0.95); /* Efeito de clique */
+}
