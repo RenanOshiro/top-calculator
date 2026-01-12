@@ -65,8 +65,8 @@ body {
   background-color: rgb(51, 51, 51);
   color: grey;
   height: 4rem;
-  padding-right: 1rem;
-  font-size: 1.4rem;
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -75,7 +75,7 @@ body {
   background-color: var(--display-bg);
   height: 6rem;
   color: white;
-  font-size: 4rem;
+  font-size: 2.6rem;
 }
 
 .keyboard {
@@ -104,4 +104,8 @@ button:hover {
 
 button:active {
   transform: scale(0.95); /* Efeito de clique */
+}
+
+.btn-equal {
+  grid-column: 1/4;
 }
